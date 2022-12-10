@@ -184,7 +184,6 @@ body {
   font-weight: 500;
   font-size: 1.125rem;
   line-height: 1.4444444444;
-  line-height: 26px;
 }
 
 .button._fw {
@@ -263,6 +262,16 @@ body {
   transition: all 0.2s ease 0s;
 }
 
+.element-animation.element-show {
+  opacity: 1;
+  -webkit-transition: all 1.5s;
+  -o-transition: all 1.5s;
+  transition: all 1.5s;
+  -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -332,8 +341,8 @@ body {
 
 .menu__btn {
   padding: 0.4375rem 2.0625rem;
-  border: 1px solid #FFDDA0;
-  border-radius: 5px;
+  border: solid #FFDDA0;
+  border-radius: 0.3125rem;
   font-family: "Roboto";
   font-weight: 600;
   font-size: 1.125rem;
@@ -345,6 +354,13 @@ body {
 
 .icon-menu {
   display: none;
+}
+
+.footer {
+  opacity: 0;
+  -webkit-transform: translateY(1.25rem);
+      -ms-transform: translateY(1.25rem);
+          transform: translateY(1.25rem);
 }
 
 .footer-menu__body {
@@ -412,6 +428,13 @@ body {
   color: rgba(255, 255, 255, 0.4);
 }
 
+.main-block {
+  opacity: 0;
+  -webkit-transform: translateY(1.25rem);
+      -ms-transform: translateY(1.25rem);
+          transform: translateY(1.25rem);
+}
+
 .main-block__bg {
   position: absolute;
   top: 0;
@@ -476,12 +499,54 @@ body {
 
 .main-block__btn-video {
   padding: 0.53125rem;
-  border: 1px solid rgba(255, 255, 255, 0.7);
+  border: solid rgba(255, 255, 255, 0.7);
   border-radius: 0.25rem;
   color: rgba(255, 255, 255, 0.7);
   -webkit-transition: all 0.2s ease 0s;
   -o-transition: all 0.2s ease 0s;
   transition: all 0.2s ease 0s;
+}
+
+.design-block__top {
+  opacity: 0;
+  -webkit-transform: translateY(1.25rem);
+      -ms-transform: translateY(1.25rem);
+          transform: translateY(1.25rem);
+}
+
+.design-block__nvidia {
+  opacity: 0;
+  -webkit-transform: translateY(1.25rem);
+      -ms-transform: translateY(1.25rem);
+          transform: translateY(1.25rem);
+}
+
+.design-block__performance {
+  opacity: 0;
+  -webkit-transform: translateY(1.25rem);
+      -ms-transform: translateY(1.25rem);
+          transform: translateY(1.25rem);
+}
+
+.design-block__bottom {
+  opacity: 0;
+  -webkit-transform: translateY(1.25rem);
+      -ms-transform: translateY(1.25rem);
+          transform: translateY(1.25rem);
+}
+
+.design-block__capability {
+  opacity: 0;
+  -webkit-transform: translateY(1.25rem);
+      -ms-transform: translateY(1.25rem);
+          transform: translateY(1.25rem);
+}
+
+.design-block__titan {
+  opacity: 0;
+  -webkit-transform: translateY(1.25rem);
+      -ms-transform: translateY(1.25rem);
+          transform: translateY(1.25rem);
 }
 
 .design-nvidia {
@@ -569,15 +634,17 @@ body {
   margin-bottom: 1.25rem;
 }
 
-.item-performance__title {
+.item-performance {
   font-family: "Heebo";
+}
+
+.item-performance__title {
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 1.4166666667;
 }
 
 .item-performance__text {
-  font-family: "Heebo";
   font-size: 0.875rem;
   line-height: 1.4285714286;
   color: rgba(255, 255, 255, 0.6);
@@ -640,15 +707,17 @@ body {
   grid-column: 1/3;
 }
 
-.item-capability__title {
+.item-capability {
   font-family: "Heebo";
+}
+
+.item-capability__title {
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 1.4583333333;
 }
 
 .item-capability__text {
-  font-family: "Heebo";
   font-size: 1.125rem;
   line-height: 1.4444444444;
   color: rgba(255, 255, 255, 0.6);
@@ -680,6 +749,10 @@ body {
 }
 
 .gallery-block {
+  opacity: 0;
+  -webkit-transform: translateY(1.25rem);
+      -ms-transform: translateY(1.25rem);
+          transform: translateY(1.25rem);
   position: relative;
 }
 
@@ -2236,6 +2309,6 @@ button.swiper-pagination-bullet {
 
   .main-block__btn-video:hover {
     color: #FFFFFF;
-    border: 1px solid #FFFFFF;
+    border: solid #FFFFFF;
   }
 }
